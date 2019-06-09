@@ -79,7 +79,7 @@
 
           <tr id="daterow">
             <th class="bold"><span class="date" id="date">Date</span></th>
-            <td><span contenteditable=""><input type="date" id="theDate"></span></td>
+            <td><span contenteditable=""><input type="date" id="today"></span></td>
           </tr>
 
           <tr class="" id="total_block">
@@ -305,45 +305,10 @@
 
 
 
-<script>
-
-(function () {
-    function checkTime(i) {
-        return (i < 10) ? "0" + i : i;
-    }
-
-    function startTime() {
-        var times = new Date(),
-        
-            hh = checkTime(times.getHours()),
-            mm = checkTime(times.getMinutes()),
-            ss = checkTime(times.getSeconds()),
-            yy = checkTime(times.getFullYear().toString(10).substring(2, 4)),
-            MM = checkTime(times.getMonth() + 1),
-            dd = checkTime(times.getDate())
-            ;
-        document.getElementById('time').innerHTML = mm + "" + ss ;
-        t = setTimeout(function () {
-            startTime1()
-        }, 500);
-    }
-    startTime();
-})();
-
-var date = new Date();
-
-var day = date.getDate();
-var month = date.getMonth() + 1;
-var year = date.getFullYear();
-
-if (month < 10) month = "0" + month;
-if (day < 10) day = "0" + day;
-
-var today = year + "-" + month + "-" + day;
-
-
-document.getElementById('theDate').value = today;
-</script>
+ <script type="text/javascript">
+    let today = new Date().toISOString().substr(0, 10);
+document.querySelector("#today").value = today;
+  </script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 
   
