@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Quotation for firebottles</title>
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+      
+      <link href="https://fonts.googleapis.com/css?family=Vampiro+One&display=swap" rel="stylesheet">
+
+      <link href="https://fonts.googleapis.com/css?family=Mogra&display=swap" rel="stylesheet">
+
+      <style type="text/css">
+        table {
+    counter-reset: tableCount;     
+}
+.counterCell:before {              
+    content: counter(tableCount); 
+    counter-increment: tableCount; 
+}
+      </style>
+
+  
+</head>
+
+<body>
+
+	<div style="padding: 80px" class="printbody">
+
+
+	<div>
+		<h1 style="font-size: 60px; color: #B22222 ;font-weight: bold;text-align: center;">Italiya Fire Service</h1>
+		<h1 onclick="myFunction()" style="font-size: 60px; font-weight: bold;text-align: center;">CERTIFICATE</h1>
+	</div>	
+
+ <div style="display: block; padding:60px 10px">
+    <p style="float: right; margin-right: -40px;font-family: 'Vampiro One', cursive;">Date: <input id="today" type="date"> </p>
+  </div>
+  <div>
+  <p style="line-height: 1.5;font-family: 'Vampiro One', cursive;">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is to certify that we have carried out maintenance, Servicing and Repairs,<br> Reconditioning Reffiling of <span style="color: #404040"  contenteditable="true">_________ </span> No of <span style="color: #404040" contenteditable="true">_______________ </span> Type Fire Extinguisher of <span style="color: #404040" contenteditable="true">_______________ </span> Kg/ltr. <br> Capacity As per US :2190 On <span contenteditable="true">_______________ </span> Belonging to M/S. <span style="color: #404040"  contenteditable="true">_______________ </span> We certify and guarantee that they all are in good working and good condition. <br> The next renewal date is on :<span contenteditable="true"><input type="date" name="date">  </span>
+
+    <br><br>
+    Please find our servicing and maintenance sticker on each fire extinguisher for authentications.
+  </p>
+  </div>
+  <div style="margin-top: 60px" >
+    <div>
+      <div style="width: 45%;float: left;color: #B22222">
+        <h2 style="color: #DC143C; font-weight: bold">Italiya Fire Service</h2>
+        <h2>Shop No.5, <br>
+Jay gangeshwar society, <br>
+Hirabaug,<br>
+Varachha road, Surat 395006<br>
+8866884946 / 8320971131</h2>
+      </div>
+    </div>
+    <div>
+      <div style="width: 45%;float: right;">
+        <h2 style="float: right">Yours Faithfully</h2><br>
+        <h2 style="float: right; color:#B22222  ">Italiya Fire Service</h2><br><br>
+        <h2 style="font-family: 'Mogra', cursive;float: right;color: red">આર.એન.ઈટાળીયા</h2>  <br><br>
+
+         <h2 style="float: right">Authorized Signature</h2>
+      </div>
+    </div>
+  </div>
+
+</div>  
+
+ 
+
+  <script type="text/javascript">
+  	let today = new Date().toISOString().substr(0, 10);
+document.querySelector("#today").value = today;
+  </script>
+
+  <script>
+function myFunction() {
+  window.print();
+}
+</script>
+
+
+
+
+
+</body>
+
+</html>
